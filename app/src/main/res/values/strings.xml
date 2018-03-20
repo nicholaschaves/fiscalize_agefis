@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">* Fiscalize *</string>
+    <string name="demandas">Demandas</string>
+    <string name="title_activity_maps">Map</string>
+</resources>

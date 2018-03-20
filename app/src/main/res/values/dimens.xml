@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="iconeslargura">50dp</dimen>
+    <dimen name="iconesaltura">50dp</dimen>
+    <dimen name="larguraInput">340dp</dimen>
+    <dimen name="alturaInput">40</dimen>
+    <dimen name="larguranumero">150</dimen>
+</resources>

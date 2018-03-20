@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context="nicholas.chaves.fiscalize.Menu"
+    tools:layout_editor_absoluteY="25dp">
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:text="@string/demandas"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/searchDemanda"
+        app:layout_constraintStart_toStartOf="@+id/addDemanda"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="13dp"
+        android:text="Ordens de Serviço"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/searchOS"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchDemanda" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="14dp"
+        android:text="Fiscalização"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/searchFisc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchOS" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="0dp"
+        android:layout_height="92dp"
+        android:layout_marginBottom="52dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/prefeiturafiscalizelogo" />
+
+    <ImageButton
+        android:id="@+id/addDemanda"
+        android:layout_width="@dimen/iconeslargura"
+        android:layout_height="@dimen/iconesaltura"
+        android:layout_marginEnd="43dp"
+        android:layout_marginStart="121dp"
+        android:background="@color/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="@+id/searchDemanda"
+        app:layout_constraintEnd_toStartOf="@+id/searchDemanda"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/searchDemanda"
+        app:srcCompat="@drawable/addicon" />
+
+    <ImageButton
+        android:id="@+id/searchDemanda"
+        android:layout_width="@dimen/iconeslargura"
+        android:layout_height="@dimen/iconesaltura"
+        android:layout_marginBottom="29dp"
+        android:layout_marginEnd="120dp"
+        android:background="@color/colorPrimary"
+        app:layout_constraintBottom_toTopOf="@+id/textView9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/addDemanda"
+        app:layout_constraintTop_toBottomOf="@+id/textView7"
+        app:srcCompat="@drawable/searchicon" />
+
+    <ImageButton
+        android:id="@+id/addOS"
+        android:layout_width="@dimen/iconeslargura"
+        android:layout_height="@dimen/iconesaltura"
+        android:layout_marginEnd="43dp"
+        android:layout_marginStart="121dp"
+        android:background="@color/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="@+id/searchOS"
+        app:layout_constraintEnd_toStartOf="@+id/searchOS"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/searchOS"
+        app:srcCompat="@drawable/addicon" />
+
+    <ImageButton
+        android:id="@+id/searchOS"
+        android:layout_width="@dimen/iconeslargura"
+        android:layout_height="@dimen/iconesaltura"
+        android:layout_marginBottom="26dp"
+        android:layout_marginEnd="120dp"
+        android:background="@color/colorPrimary"
+        app:layout_constraintBottom_toTopOf="@+id/textView10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/addOS"
+        app:layout_constraintTop_toBottomOf="@+id/textView9"
+        app:srcCompat="@drawable/searchicon" />
+
+    <ImageButton
+        android:id="@+id/addFisc"
+        android:layout_width="@dimen/iconeslargura"
+        android:layout_height="@dimen/iconesaltura"
+        android:layout_marginEnd="43dp"
+        android:layout_marginStart="121dp"
+        android:background="@color/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="@+id/searchFisc"
+        app:layout_constraintEnd_toStartOf="@+id/searchFisc"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/searchFisc"
+        app:srcCompat="@drawable/addicon" />
+
+    <ImageButton
+        android:id="@+id/searchFisc"
+        android:layout_width="@dimen/iconeslargura"
+        android:layout_height="@dimen/iconesaltura"
+        android:layout_marginBottom="36dp"
+        android:layout_marginEnd="120dp"
+        android:background="@color/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/addFisc"
+        app:layout_constraintTop_toBottomOf="@+id/textView10"
+        app:srcCompat="@drawable/searchicon" />
+
+</android.support.constraint.ConstraintLayout>
